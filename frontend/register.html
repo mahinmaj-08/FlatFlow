@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register – FlatFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a class="brand" href="index.html">FlatFlow</a></nav>
+<main class="narrow">
+<h1>Create your account</h1>
+<p class="sub">Pick a login name you will remember. It must be unique.</p>
+<form class="card" id="register-form">
+<label for="display_name">Display name</label><input id="display_name" name="display_name" type="text" required>
+<label for="login_name">Login name</label><input id="login_name" name="login_name" type="text" autocomplete="username" required>
+<label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+<button type="submit">Create account</button>
+<p class="msg" id="form-message" role="alert"></p>
+</form>
+<p>Already registered? <a href="index.html">Log in</a></p>
+</main>
+<script src="js/api.js" defer></script>
+<script src="js/common.js" defer></script>
+<script src="js/register.js" defer></script>
+</body>
+</html>

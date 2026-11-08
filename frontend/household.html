@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Household – FlatFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a class="brand" href="dashboard.html">FlatFlow</a><a href="dashboard.html">Dashboard</a><a href="chores.html">Chores</a><a href="expenses.html">Expenses</a><a href="household.html" aria-current="page">Household</a><a href="index.html" id="logout-link">Log out</a></nav>
+<main>
+<h1>Your household</h1>
+<p class="sub">Create a new household, or join one with an invite code.</p>
+<div class="grid">
+<form class="card" id="create-household-form"><h2>Create a household</h2>
+<label for="household_name">Household name</label><input id="household_name" name="household_name" type="text" required>
+<button type="submit">Create household</button>
+<p class="msg" id="create-message" role="alert"></p></form>
+<form class="card" id="join-household-form"><h2>Join a household</h2>
+<label for="invite_code">Invite code</label><input id="invite_code" name="invite_code" type="text" required>
+<button type="submit">Join household</button>
+<p class="msg" id="join-message" role="alert"></p></form>
+</div>
+<section class="card" id="household-info"><h2>Members</h2>
+<p>Invite code: <strong id="household-invite-code">Not available yet</strong></p>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Role</th></tr></thead>
+<tbody id="member-list"><tr><td class="empty" colspan="2">Join or create a household to see its members.</td></tr></tbody></table></div></section>
+</main>
+<script src="js/api.js" defer></script>
+<script src="js/common.js" defer></script>
+<script src="js/household.js" defer></script>
+</body>
+</html>
