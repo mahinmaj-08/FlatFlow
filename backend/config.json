@@ -1,0 +1,9 @@
+{
+  "port": 8080,
+  "databasePath": "data/flatflow.db",
+  "tokenLifetimeHours": 168,
+  "bcryptCost": 12,
+  "inviteCodeLength": 6,
+  "timeZone": "America/Halifax",
+  "frontendDir": "../frontend"
+}
