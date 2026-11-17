@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expenses – FlatFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a class="brand" href="dashboard.html">FlatFlow</a><a href="dashboard.html">Dashboard</a><a href="chores.html">Chores</a><a href="expenses.html" aria-current="page">Expenses</a><a href="household.html">Household</a><a href="index.html" id="logout-link">Log out</a></nav>
+<main>
+<h1>Expenses</h1>
+<p class="sub">Amounts are split to the exact cent.</p>
+<form class="card" id="expense-form"><h2>Record an expense</h2>
+<label for="expense_description">What was it for?</label><input id="expense_description" name="expense_description" type="text" required>
+<label for="expense_date">Date</label><input id="expense_date" name="expense_date" type="date" required>
+<label for="expense_amount">Total (dollars)</label><input id="expense_amount" name="expense_amount" type="number" min="0.01" step="0.01" inputmode="decimal" required>
+<label for="expense_payer">Paid by</label><select id="expense_payer" name="expense_payer" required><option value="">Choose a member</option></select>
+<fieldset id="expense_shares"><legend>Split between</legend><p class="empty">Members appear here once you have joined a household.</p></fieldset>
+<button type="submit">Record expense</button>
+<p class="msg" id="form-message" role="alert"></p></form>
+<section class="card"><h2>Expense history</h2>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Description</th><th>Paid by</th><th class="amt">Total</th><th class="amt">Your share</th></tr></thead>
+<tbody id="expense-list"><tr><td class="empty" colspan="5">No expenses yet.</td></tr></tbody></table></div></section>
+</main>
+<script src="js/api.js" defer></script>
+<script src="js/common.js" defer></script>
+<script src="js/expenses.js" defer></script>
+</body>
+</html>

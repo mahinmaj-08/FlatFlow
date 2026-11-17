@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard – FlatFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a class="brand" href="dashboard.html">FlatFlow</a><a href="dashboard.html" aria-current="page">Dashboard</a><a href="chores.html">Chores</a><a href="expenses.html">Expenses</a><a href="household.html">Household</a><a href="index.html" id="logout-link">Log out</a></nav>
+<main>
+<h1>Dashboard</h1>
+<p class="sub" id="household-name">Your household at a glance.</p>
+<div class="balances">
+<div><div class="num" id="your-balance">$0.00</div><div class="lbl">Your balance</div></div>
+<div><div class="num" id="pending-count">0</div><div class="lbl">Pending chores</div></div>
+<div><div class="num" id="overdue-count">0</div><div class="lbl">Overdue chores</div></div>
+</div>
+<div class="grid">
+<section class="card"><h2>Overdue and pending chores</h2>
+<div class="table-wrap"><table><thead><tr><th>Chore</th><th>Assigned to</th><th>Due</th></tr></thead>
+<tbody id="dashboard-chore-list"><tr><td class="empty" colspan="3">No chores yet. <a href="chores.html">Add one</a>.</td></tr></tbody></table></div></section>
+<section class="card"><h2>Who owes whom</h2>
+<div class="table-wrap"><table><thead><tr><th>Member</th><th class="amt">Balance</th></tr></thead>
+<tbody id="balance-list"><tr><td class="empty" colspan="2">No expenses yet. <a href="expenses.html">Record one</a>.</td></tr></tbody></table></div></section>
+</div>
+</main>
+<script src="js/api.js" defer></script>
+<script src="js/common.js" defer></script>
+<script src="js/dashboard.js" defer></script>
+</body>
+</html>
