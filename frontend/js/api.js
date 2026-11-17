@@ -2,7 +2,7 @@
 // browser (localStorage) answers instead, so every page works with no server.
 // When the real API is running: set USE_MOCK to false and check API_BASE.
 const API_BASE = "/api";
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 const Auth = {
   get token() { return localStorage.getItem("ff_token"); },
