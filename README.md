@@ -1,4 +1,4 @@
-# 🏠 FlatFlow
+# FlatFlow
 
 **A shared household management application for roommates.**
 
@@ -8,33 +8,33 @@ Developed as a team project for **CS2043 — Software Development** at the Unive
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔐 User Authentication
+### User Authentication
 - Create an account with a display name, login name, and password.
 - Log in securely using token-based authentication.
 - Log out of an active session.
 
-### 🏡 Household Management
+### Household Management
 - Create a household.
 - Generate a unique household invitation code.
 - Join an existing household using an invitation code.
 - View household members and their roles.
 - Distinguish between household organizers and members.
 
-### 🧹 Chore Management — Frontend Prototype
+### Chore Management — Frontend Prototype
 - Create chores and assign them to household members.
 - Set due dates and track completion status.
 - Filter chores by assignee or status.
 - Identify overdue chores.
 
-### 💰 Shared Expenses — Frontend Prototype
+### Shared Expenses — Frontend Prototype
 - Record shared household expenses.
 - Select the member who paid.
 - Split expenses equally among selected members.
 - Calculate individual expense shares.
 
-### 📊 Household Dashboard — Frontend Prototype
+### Household Dashboard — Frontend Prototype
 - View pending and overdue chores.
 - See household member balances.
 - Get an overview of household activity.
@@ -43,7 +43,7 @@ Developed as a team project for **CS2043 — Software Development** at the Unive
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Technologies |
 |---|---|
@@ -56,7 +56,7 @@ Developed as a team project for **CS2043 — Software Development** at the Unive
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 FlatFlow/
@@ -132,7 +132,7 @@ The Java backend serves the frontend and handles supported API requests.
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 From the `backend` directory, run:
 
@@ -146,7 +146,7 @@ The current automated test suite contains four tests covering authentication and
 
 ---
 
-## 🌿 Git Workflow
+## Git Workflow
 
 We use a branching workflow to keep development organized.
 
@@ -161,7 +161,7 @@ Feature branches are merged into `develop`, tested, and then integrated into `ma
 
 ---
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
 - [x] Initialize GitHub repository
 - [x] Establish frontend and backend project structure
@@ -179,7 +179,7 @@ Feature branches are merged into `develop`, tested, and then integrated into `ma
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 | Team Member | GitHub | Contributions |
 |---|---|---|
@@ -188,7 +188,7 @@ Feature branches are merged into `develop`, tested, and then integrated into `ma
 
 ---
 
-## 📚 Academic Project
+## Academic Project
 
 FlatFlow is developed for **CS2043 — Software Development** at the **University of New Brunswick**.
 
@@ -198,4 +198,4 @@ This project is under active development. Additional functionality will be imple
 
 ---
 
-**FlatFlow — Making shared living a little simpler. 🏠**
+**FlatFlow — Making shared living a little simpler. **
